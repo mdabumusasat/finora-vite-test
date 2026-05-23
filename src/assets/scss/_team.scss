@@ -1,0 +1,319 @@
+/***
+
+====================================================================
+    Team Section
+====================================================================
+
+***/
+.teams-section {
+    position: relative;
+    padding: 120px 0;
+    @include media-breakpoint-down(lg){
+        padding: 80px 0;
+    }
+}
+.team-block {
+    .inner-block {
+        position: relative;
+        background-color: #F7F8ED;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 30px;
+        &:hover {
+            .image {
+                img {
+                    transform: scale(1.04, 1.04) rotate(2deg);
+                }
+            }
+            .socials-icon-box {
+                .socials-icon {
+                    transform: scale(1, 1);
+                }
+            }
+        }
+    }
+    .image {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @include transition(all 500ms ease);
+        }
+    }
+    .content {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: space-between;
+        background-color: #fff;
+        padding: 16px 20px 18px;
+        border-radius: 20px;
+        .title {
+            margin-bottom: 0;
+            letter-spacing: -0.02em;
+        }
+        .designation {
+            letter-spacing: -0.02em;
+        }
+    }
+    .socials-icon-box {
+        position: relative;
+        display: inline-block;
+        .share-icon {
+            background-color: #F7F8ED;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 20px;
+            color: #10551F;
+            text-align: center;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .socials-icon {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            flex-direction: column;
+            position: absolute;
+            bottom: 75px;
+            left: calc(50% - 15px);
+            transform: scale(0, 1);
+            @include transition(all 300ms ease);
+            a {
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                border-radius: 50%;
+                font-size: 14px;
+                color: #00142B;
+                background-color: #fff;
+                display: inline-block;
+                &:hover {
+                    color: var(--theme-color1-text-color);
+                    background-color: var(--theme-color1);
+                }
+            }
+        }
+    }
+}
+
+/***
+
+====================================================================
+    Team Section Two
+====================================================================
+
+***/
+.teams-section-two {
+    position: relative;
+    padding: 120px 0;
+    @include media-breakpoint-down(lg){
+        padding: 80px 0;
+    }
+    .sec-title-outer {
+        .text-box {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            border-bottom: 1px solid rgba(12, 47, 37, 0.1);
+            padding-bottom: 50px;
+            .shape {
+                min-width: 44px;
+                min-height: 44px;
+            }
+            .text {
+                color: #6d827c;
+                letter-spacing: -0.03em;
+                max-width: 420px;
+            }
+        }
+        .btn-style-one {
+            margin-top: 45px;
+        }
+        @include media-breakpoint-down(xl){
+            margin-bottom: 60px;
+        }
+    }
+    .pull-up {
+        margin-top: -30px;
+        @include media-breakpoint-down(xl){
+            margin-top: 0;
+        }
+    }
+}
+.team-block-two {
+    .inner-block {
+        position: relative;
+        background-color: #E7EBEA;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        height: 406px;
+        @include transition(all 300ms ease);
+        &:hover {
+            background-color: var(--theme-color1);
+            .image {
+                img {
+                    transform: scale(1.04, 1.04) rotate(2deg);
+                }
+            }
+            .socials-icon-box {
+                .socials-icon {
+                    transform: scale(1, 1);
+                    a {
+                        border-color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .image {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+        text-align: center;
+        img {
+            @include transition(all 500ms ease);
+        }
+    }
+    .content {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        .inner {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            justify-content: space-between;
+            background-color: rgba(12, 47, 37, 0.56);
+            border: 1px solid rgba(12, 47, 37, 0.1);
+            backdrop-filter: blur(51.400001525878906px);
+            padding: 16px 20px 18px;
+            border-radius: 10px;
+            width: 100%;
+        }
+        .title {
+            color: #fff;
+            margin-bottom: 0;
+            letter-spacing: -0.02em;
+        }
+        .designation {
+            color: var(--theme-color1);
+            letter-spacing: -0.02em;
+        }
+    }
+    .socials-icon-box {
+        position: relative;
+        display: inline-block;
+        .share-icon {
+            background-color: #F7F8ED;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 20px;
+            color: var(--theme-color1);
+            text-align: center;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .socials-icon {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            flex-direction: column;
+            position: absolute;
+            bottom: 75px;
+            left: calc(50% - 15px);
+            transform: scale(0, 1);
+            @include transition(all 300ms ease);
+            a {
+                width: 30px;
+                height: 30px;
+                line-height: 28px;
+                text-align: center;
+                border-radius: 50%;
+                font-size: 14px;
+                color: #00142B;
+                background-color: #fff;
+                display: inline-block;
+                border: 2px solid transparent;
+                &:hover {
+                    color: var(--theme-color1-text-color);
+                    background-color: var(--theme-color1);
+                }
+            }
+        }
+    }
+}
+
+.team-block-three {
+    .inner-block {
+        position: relative;
+        margin-bottom: 20px;
+        &:hover {
+            .image-box {
+                .socials-icon {
+                    transform: scale(1, 1);
+                }
+            }
+            .image {
+                img {
+                    transform: scale(1.04, 1.04) rotate(2deg);
+                }
+            }
+        }
+    }
+    .image-box {
+        .socials-icon {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            transform: scale(0, 1);
+            @include transition(all 300ms ease);
+            a {
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                border-radius: 50%;
+                text-align: center;
+                background-color: var(--theme-color1);
+                display: inline-block;
+                color: var(--theme-color1-text-color);
+                font-size: 14px;
+                @include transition(all 300ms ease);
+                &:hover {
+                    background-color: var(--theme-color2);
+                    color: var(--theme-color2-text-color);
+                }
+            }
+        }
+    }
+    .image {
+        background-color: #E7EBEA;
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: center;
+        position: relative;
+        @include transition(all 500ms ease);
+        img {
+            @include transition(all 500ms ease);
+        }
+    }
+    .content {
+        margin-top: 15px;
+        .title {
+            margin-bottom: 0;
+            letter-spacing: -0.02em;
+        }
+    }
+}

@@ -1,0 +1,247 @@
+/*** 
+====================================================================
+    FAQ's Section
+====================================================================
+***/
+.faqs-section {
+    padding: 120px 0;
+    position: relative;
+    @include media-breakpoint-down(lg){
+        padding: 80px 0;
+    }
+    .inner-container {
+        background: #f7f8ed;
+        border-radius: 20px;
+        margin: 0 auto;
+        max-width: 1880px;
+        padding: 120px 15px;
+        position: relative;
+        overflow: hidden;
+    }
+    .bg-image {
+        height: 100%;
+        opacity: 0.4;
+        width: 100%;
+        img {
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+    .images-column {
+        .inner-column {
+            position: relative;
+            .shape1 {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+        .image {
+            mask-image: url(../images/resource/faq1-mask.png);
+            mask-size: contain;
+            mask-position: center center;
+            mask-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .content-box {
+            background-color: var(--theme-color3);
+            border-radius: 20px;
+            bottom: 20px;
+            left: 20px;
+            max-width: 351px;
+            padding: 40px 40px;
+            position: absolute;
+            width: 100%;
+            @include media-breakpoint-down(sm){
+                bottom: 0;
+                left: 0;
+            }
+            .title {
+                color: #fff;
+                margin-bottom: 22px;
+                line-height: 35px;
+                letter-spacing: -0.02em;
+            }
+        }
+    }
+}
+
+.accordion-style1 {
+    @include media-breakpoint-down(xl){
+        margin-bottom: 50px;
+    }
+    .accordion-box {
+        .block {
+            border: none;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 0;
+            overflow: hidden;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .acc-btn {
+                padding: 17px 20px 16px 30px;  
+                border-radius: 10px; 
+            }
+        }
+        .active-block {
+            .acc-btn {
+                background-color: var(--theme-color3);
+                color: var(--theme-color1);
+                .icon {
+                    background-color: #10551F;
+                    color: var(--theme-color1);
+                }
+            }
+        }
+        .acc-content {
+            margin: 0;
+            padding: 23px 30px;
+            .content {
+                .text {
+                    margin: 0;
+                    max-width: 100%;
+                    letter-spacing: -0.02em;
+                }
+            }
+        }
+    }
+}
+
+
+/***
+====================================================================
+    FAQ's Section Two
+====================================================================
+***/
+.faqs-section-two {
+    padding: 120px 0;
+    position: relative;
+    @include media-breakpoint-down(lg){
+        padding: 80px 0;
+    }
+    .inner-container {
+        border-radius: 20px;
+        margin: 0 auto;
+        max-width: 1880px;
+        padding: 120px 15px;
+        position: relative;
+        overflow: hidden;
+    }
+    .bg-image {
+        height: 100%;
+        opacity: 0.4;
+        width: 100%;
+        img {
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+    .images-column {
+        .inner-column {
+            position: relative;
+            .shape1 {
+                position: absolute;
+                right: 35%;
+                top: 220px;
+                z-index: 1;
+                @media (max-width: 1399.98px){
+                    top: 30%;
+                }
+                @media (max-width: 575.98px){
+                    display: none;
+                }
+            }
+        }
+        .image {
+            border-radius: 40px;
+            height: 100%;
+            overflow: hidden;
+            width: 100%;
+            @media (max-width: 575.98px){
+                min-height: 570px;
+            }
+            img {
+                height: 100%;
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+        .content-box {
+            background-color: var(--theme-color3);
+            border-radius: 20px;
+            bottom: 20px;
+            max-width: 351px;
+            padding: 40px 40px;
+            position: absolute;
+            right: 20px;
+            width: 100%;
+            @include media-breakpoint-down(sm){
+                bottom: 0;
+                left: 0;
+            }
+            @media (max-width: 475.98px){
+                max-width: none;
+                right: 0;
+            }
+            .title {
+                color: #fff;
+                letter-spacing: -0.02em;
+                line-height: 35px;
+                margin-bottom: 22px;
+            }
+        }
+    }
+}
+
+.accordion-style2 {
+    @include media-breakpoint-down(xl){
+        margin-bottom: 50px;
+    }
+    .accordion-box {
+        .block {
+            background-color: #F7F8ED;
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 0;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .acc-btn {
+                border-radius: 10px;
+                padding: 17px 20px 16px 30px;
+            }
+        }
+        .active-block {
+            .acc-btn {
+                background-color: var(--theme-color3);
+                color: var(--theme-color1);
+                .icon {
+                    background-color: #10551F;
+                    color: var(--theme-color1);
+                }
+            }
+        }
+        .acc-content {
+            margin: 0;
+            padding: 23px 30px;
+            .content {
+                .text {
+                    letter-spacing: -0.02em;
+                    margin: 0;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

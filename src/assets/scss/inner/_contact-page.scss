@@ -1,0 +1,93 @@
+/***
+
+====================================================================
+        Contact
+====================================================================
+
+***/
+.contact-details__info {
+  position: relative;
+  display: block;
+  margin-top: 41px;
+  li {
+    align-items: center;
+    display: flex;
+    position: relative;
+    @media (max-width: 575.98px){
+      gap: 15px;
+    }
+    .icon {
+      align-items: center;
+      background-color: var(--theme-color2);
+      color: var(--theme-color2-text-color);
+      display: flex;
+      flex-shrink: 0;
+      height: 80px;
+      justify-content: center;
+      width: 80px;
+      @include transition(all 500ms ease);
+      @media (max-width: 575.98px){
+        height: 70px;
+        line-height: 70px;
+        width: 70px;
+      }
+      span {
+        font-size: 25px;
+        @include transition(all 500ms ease);
+      }
+    }
+    .text {
+      margin-left: 30px;
+      @media (max-width: 575.98px){
+        margin-left: 0;
+      }
+      p {
+        font-size: 14px;
+        line-height: 24px;
+      }
+      a {
+        font-size: 18px;
+        color: var(--notech-black);
+        @include transition(all 400ms ease);
+      }
+      span {
+        font-size: 20px;
+        color: var(--notech-black);
+      }
+    }
+    &:hover {
+      .icon {
+        background-color: var(--theme-color1);
+        color: var(--theme-color1-text-color);
+      }
+      .text {
+        a {
+          color: var(--notech-base);
+          span {
+            color: var(--notech-gray);
+          }
+        }
+      }
+    }
+  }
+  li+li {
+    margin-top: 19px;
+  }
+}
+.contact-details {
+  .sec-title {
+    margin-bottom: 20px;
+    .sub-title {
+      color: #4f515d;
+    }
+    .h2 {
+      color: var(--headings-color);
+    }
+    .text {
+      color: #4f515d;
+    }
+  }
+}
+.map{
+  height: 550px;
+}

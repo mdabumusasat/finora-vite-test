@@ -1,0 +1,234 @@
+/*** 
+
+====================================================================
+    Banner Section One
+====================================================================
+
+***/
+.banner-section {
+    position: relative;
+    overflow: hidden;
+    .bg-image {
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .shape1 {
+        position: absolute;
+        bottom: 240px;
+        left: 37%;
+        @media (max-width: 1399.98px) {
+            left: 45%;
+        }
+        @include media-breakpoint-down(lg){
+            left: auto;
+            right: 20%;
+            bottom: 10%;
+        }
+        @include media-breakpoint-down(sm){
+            display: none;
+        }
+    }
+    .inner-container {
+        max-width: 1670px;
+        margin: 0 auto;
+        position: relative;
+        padding: 473px 15px 220px;
+        @include media-breakpoint-down(lg){
+            padding: 300px 15px 150px;
+        }
+        @include media-breakpoint-down(md){
+            padding: 150px 15px;
+        }
+        .line-box {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            z-index: -1;
+            .line {
+                width: 60px;
+                height: 100%;
+                backdrop-filter: blur(15px);
+                background: rgb(255 255 255 / 16%);
+                border-right: 1px solid rgb(255 255 255 / 8%);
+                mask: radial-gradient(circle at bottom, black 60%, transparent 100%);
+                -webkit-mask: radial-gradient(circle at bottom, #000000f5 100%, #00000000 100%);
+                @include media-breakpoint-down(lg){
+                    width: 30px;
+                }
+            }
+            .line2 {
+                background: linear-gradient(268.74deg, rgba(255, 255, 255, 0) 8.26%, #86942E 43.44%, rgba(12, 47, 37, 0.9) 82.08%);
+                width: 874px;
+                height: 486px;
+                position: absolute;
+                left: 0;
+                bottom: 77px;
+                border-radius: 50%;
+                z-index: -1;
+                @include media-breakpoint-down(lg){
+                    bottom: 0;
+                    width: 486px;
+                    height: 286px;
+                }
+            }
+        }
+    }
+    .title {
+        color: #fff;
+        letter-spacing: -0.02em;
+        margin-bottom: 30px;
+        max-width: 821px;
+        @include media-breakpoint-down(lg){
+            font-size: 70px;
+        }
+        @include media-breakpoint-down(md){
+            font-size: 45px;
+            line-height: 1.2;
+        }
+    }
+}
+
+/*** 
+
+====================================================================
+    Banner Section Two
+====================================================================
+
+***/
+.banner-section-two {
+    position: relative;
+    overflow: hidden;
+    .bg-image {
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        &:before {
+            position: absolute;
+            content: '';
+            background: linear-gradient(-326.49deg, #0C2F25 17.16%, rgba(12, 47, 37, 0) 59.69%);
+            width: 100%;
+            height: 100%;
+            left: 0;
+            bottom: 0;
+            opacity: 0.88;
+            pointer-events: none;
+            @include media-breakpoint-down(xl){
+                background: linear-gradient(-326.49deg, #0c2f25 17.16%, rgb(12 47 37 / 68%) 59.69%);
+            }
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .inner-container {
+        align-items: flex-end;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 1670px;
+        padding: 680px 15px 100px;
+        position: relative;
+        @media (max-width: 1299.98px){
+            align-items: center;
+        }
+        @include media-breakpoint-down(xl){
+            flex-wrap: wrap;
+            padding: 280px 15px 100px;
+        }
+        @include media-breakpoint-down(lg){
+            padding: 300px 15px 150px;
+        }
+        @include media-breakpoint-down(md){
+            padding: 200px 15px 100px;
+        }
+    }
+    .content-box{
+        @include media-breakpoint-down(xl){
+            margin-bottom: 50px;
+        }
+    }
+    .title {
+        color: #fff;
+        font-weight: 500;
+        letter-spacing: -0.02em;
+        margin-bottom: 30px;
+        max-width: 999px;
+        @include responsive-font(32px, 4.68vw, 75px, 1.06);
+    }
+    .banner-info-box {
+        align-items: start;
+        background-color: rgba(1, 1, 1, 0.16);
+        backdrop-filter: blur(17px);
+        border-radius: 20px;
+        display: inline-flex;
+        overflow: hidden;
+        @media (max-width: 425.98px){
+            display: block;
+            width: 100%;
+        }
+        .count-info {
+            padding: 30px 40px;
+            width: 275px;
+            @media (max-width: 425.98px){
+                width: 100%;
+            }
+            .count-box {
+                font-size: 60px;
+                line-height: 1;
+                font-weight: 500;
+                color: #fff;
+            }
+            .title {
+                color: #aec7b3;
+                font-size: 20px;
+                letter-spacing: -0.02em;
+                margin-bottom: 45px;
+            }
+            .text {
+                letter-spacing: -0.02em;
+                color: #aec7b3;
+                font-weight: 500;
+                margin-bottom: 0;
+            }
+        }
+        .count-info-two {
+            background-color: var(--theme-color1);
+            padding: 30px 40px;
+            width: 275px;
+            @media (max-width: 425.98px){
+                width: 100%;
+            }
+            .count-box {
+                font-size: 60px;
+                line-height: 1;
+                font-weight: 500;
+                color: var(--theme-color1-text-color);
+            }
+            .title {
+                color: var(--theme-color1-text-color);
+                font-size: 20px;
+                letter-spacing: -0.02em;
+                margin-bottom: 45px;
+            }
+            .text {
+                color: var(--theme-color1-text-color);
+                font-weight: 500;
+                letter-spacing: -0.02em;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

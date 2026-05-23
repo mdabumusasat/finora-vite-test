@@ -1,0 +1,118 @@
+//Root 
+@function hexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 90deg;
+  inherits: false;
+}
+
+//main theme colors
+$theme-color1: #C7DC49;
+$theme-color2: #0C2F25;
+$theme-color3: #0C2F25;
+
+//text colors when theme color bg
+$theme-color1-text-color: #0C2F25;
+$theme-color2-text-color: #ffffff;
+$theme-color3-text-color: #C7DC49;
+
+:root {
+  --r: 30px; /* radius */
+  --s: 50px; /* size of the inner curve*/
+  --_m:/calc(2*var(--r)) calc(2*var(--r)) radial-gradient(#000 70%,#0000 72%) no-repeat;
+  
+  //theme color
+  --theme-color1: #{$theme-color1};
+  --theme-color2: #{$theme-color2};
+  --theme-color3: #{$theme-color3};
+
+  //rgb version of those theme colors
+  --theme-color1-rgb: #{hexToRGB($theme-color1)};
+  --theme-color2-rgb: #{hexToRGB($theme-color2)};
+  --theme-color3-rgb: #{hexToRGB($theme-color3)};
+
+  //text colors when theme color bg
+  --theme-color1-text-color: #{$theme-color1-text-color};
+  --theme-color2-text-color: #{$theme-color2-text-color};
+  --theme-color3-text-color: #{$theme-color3-text-color};
+
+
+  --theme-color-white: #ffffff;
+  --theme-color-white-rgb: 255,255,255;
+  --theme-color-lighter: #F8F8F8;
+  --theme-color-lighter2: #cccccc;
+  --theme-color-silver: #F5F5F5;
+  --review-color: #FFAA18;
+
+  --theme-color-black: #000000;
+  --theme-color-black-rgb: 0, 0, 0;
+  --theme-color-dark:  #051A25;
+  --theme-color-dark2:  #463131;
+  --theme-color-dark-rgb:  70, 49, 49;
+  --theme-color-gray:  #F1F8F2;
+
+
+
+  //Gradients
+  --gradient-1: linear-gradient(181.35deg, rgba(5, 15, 19, 0) 1.15%, rgba(2, 223, 130, 0.1) 98.91%);
+  
+
+    
+  //text heading color
+  --text-color:         #6D827C;
+  --headings-color:     #0C2F25;
+  --link-color:         var(--theme-color1);
+  --link-hover-color:   var(--theme-color1);
+
+
+  //font family  
+  --body-font-family: "Work Sans", sans-serif;
+  --heading-font-family: "Work Sans", sans-serif;
+  
+  //body
+  --body-bg:          #ffffff;
+  --body-font-size:   16px;
+  --body-line-height: 1.625;
+  --body-font-weight: 400;
+
+  //heading font size + weight
+  --line-height-heading-h1: 80px;
+  --line-height-heading-h2: 60px;
+  --line-height-heading: 1.5em;
+  --line-height-heading-small: 1.5em;
+
+  --h1-font-size: 80px;
+  --h2-font-size: 50px;
+  --h3-font-size: 30px;
+  --h4-font-size: 24px;
+  --h5-font-size: 20px;
+  --h6-font-size: 16px;
+
+  --h1-font-weight: 500;
+  --h2-font-weight: 500;
+  --h3-font-weight: 500;
+  --h4-font-weight: 500;
+  --h5-font-weight: 500;
+  --h6-font-weight: 500;
+
+  //section sub title
+  --sec-title-subtitle-color: var(--theme-color-white);
+  --sec-title-subtitle-font-size: 16px;
+  --sec-title-subtitle-font-family: var(--body-font-family);
+  --sec-title-subtitle-font-weight: 500;
+  --sec-title-subtitle-line-height: 1;  
+
+  //section title
+  --sec-title-color:                 var(--headings-color);
+  --sec-title-font-size:             var(--h2-font-size);
+  --sec-title-font-family:           var(--heading-font-family);
+  --sec-title-font-weight:           500;
+  --sec-title-title-line-height:     var(--line-height-heading-h2);
+
+  //container
+  --container-width: 1350px;
+  --small-container-width: 1000px;
+  --large-container-width: 1702px;
+}

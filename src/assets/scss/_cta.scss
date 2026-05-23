@@ -1,0 +1,113 @@
+/***
+====================================================================
+  cta-section
+====================================================================
+***/
+
+.cta-section {
+  align-items: flex-end;
+  display: flex;
+  height: 800px;
+  overflow: hidden;
+  padding: 0 0 60px;
+  position: relative;
+  .bg-image {
+      width: 100%;
+      height: 100%;
+      &:before {
+          position: absolute;
+          content: '';
+          background: linear-gradient(351.9deg, #0C2F25 6.07%, rgba(12, 47, 37, 0) 62.96%);
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          opacity: 0.88;
+          pointer-events: none;
+          @include media-breakpoint-down(xl){
+              background: linear-gradient(351.9deg, #0C2F25 6.07%, rgb(12 47 37 / 72%) 62.96%);
+          }
+      }
+      img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+      }
+  }
+  .inner-container {
+      align-items: end;
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+      position: relative;
+      z-index: 1;
+      @include media-breakpoint-down(xl){
+          flex-wrap: wrap;
+          gap:40px;
+      }
+  }
+  .title {
+    color: #fff;
+    letter-spacing: -0.04em;
+    text-transform: capitalize;
+    max-width: 660px;
+    margin-bottom: 0;
+    border-bottom: 1px solid var(--theme-color1);
+    padding-bottom: 46px;
+  }
+  .why-choose-box {
+    position: relative;
+    background-color: rgba(1, 1, 1, 0.16);
+    backdrop-filter: blur(17px);
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 404px;
+    width: 100%;
+    .counter-box {
+      padding: 50px 40px 30px;
+      @include media-breakpoint-down(sm){
+        padding: 40px 20px;
+      }
+    }
+    .sub-title {
+      color: var(--theme-color1);
+      letter-spacing: -0.02em;
+      margin-bottom: 0;
+    }
+    .count-box {
+      color: #fff;
+      font-size: 80px;
+      font-weight: 500;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+    .title-count{
+      color: #fff;
+      letter-spacing: -0.02em;
+      line-height: 30px;
+      margin-bottom: 0;
+      max-width: 295px;
+    }
+  }
+  .button-box {
+    background-color: var(--theme-color1);
+    padding: 16px 40px;
+    @include media-breakpoint-down(sm){
+      padding: 15px;
+    }
+    .btn-style-one {
+      background-color: #fff;
+      color: var(--theme-color1-text-color);
+      width: 100%;
+      @include media-breakpoint-down(sm){
+        .btn-title{
+          font-size: 14px;
+        }
+      }
+      .left-arrow, .right-arrow {
+        background: var(--theme-color1);
+      }
+    }
+  }
+}

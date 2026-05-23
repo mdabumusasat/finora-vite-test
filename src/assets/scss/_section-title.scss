@@ -1,0 +1,122 @@
+/*** 
+
+====================================================================
+Section Title
+====================================================================
+
+***/
+
+.sec-title {
+  position: relative;
+  margin-bottom: 50px;
+  .sub-title {
+    align-items: center;
+    border-radius: 31px;
+    color: var(--sec-title-subtitle-color);
+    display: inline-flex;
+    font-size: var(--sec-title-subtitle-font-size);
+    font-weight: var(--sec-title-subtitle-font-weight);
+    font-family: var(--sec-title-subtitle-font-family);
+    letter-spacing: -0.02em;
+    line-height: var(--sec-title-subtitle-line-height);
+    margin-bottom: 17px;
+    padding: 12px 15px 12px 30px;
+    background: var(--theme-color3);
+    text-transform: capitalize;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 14px;
+      top: calc(50% - 4px);
+      background: var(--theme-color1);
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+  }
+  &.text-center{
+    .sub-title{
+      justify-content: center;
+    }
+  }
+  .h1{
+    position: relative;
+    font-size: var(--h1-font-size);
+    font-weight: 400;
+    line-height: 1.211em;        
+  }
+  .h2 {
+    position: relative;
+    font-size: var(--sec-title-font-size);
+    color: var(--sec-title-color);
+    font-family: var(--sec-title-font-family);
+    font-weight: var(--sec-title-font-weight);
+    line-height: var(--sec-title-title-line-height);
+    margin-bottom: 0;
+    letter-spacing: -0.04em;
+    @include media-breakpoint-down(md){
+      font-size: 38px;
+      line-height: 50px;
+    }
+    @include media-breakpoint-down(sm){
+      font-size: 36px;
+      line-height: 46px;
+      br {
+        display: none;
+      }
+    }
+  }
+  .text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    margin-top: 30px;
+    @include media-breakpoint-down(sm){
+      font-size: 14px;
+      br {
+        display: none;
+      }
+    }
+  }
+  &.light{
+    .text,
+    .h2,
+    .h1{
+      color: var(--theme-color-white);
+    }
+    .sub-title {
+      background: var(--theme-color1);
+      color: var(--theme-color1-text-color);
+      &:before {
+        background: var(--theme-color-white);
+      }
+    }
+  }
+}
+
+.title-stroke-text{
+  color: var(--theme-color1);
+  font-size: 200px;
+  font-weight: 700;
+  line-height: 200px;
+  pointer-events: none;
+  text-transform: uppercase;
+  @include responsive-font(55px, 9.5vw, 200px, 1.2);
+  span{
+    font-size: 200px;
+    font-weight: 700;
+    line-height: 200px;
+    position: relative;
+    pointer-events: none;
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: var(--theme-color-white);
+    opacity: .25;
+    white-space: nowrap;
+    transform: translateX(100%);
+    overflow: hidden;
+    @include responsive-font(55px, 9.5vw, 200px, 1.2);
+  }
+}

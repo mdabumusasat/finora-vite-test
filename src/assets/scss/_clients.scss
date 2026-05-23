@@ -1,0 +1,83 @@
+/***
+====================================================================
+  Clients Section
+====================================================================
+***/
+.clients-section {
+  padding: 120px 0;
+  position: relative;
+  @include media-breakpoint-down(lg){
+    padding: 80px 0;
+  }
+  .inner-container {
+    max-width: 1614px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .title-box {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    max-width: 1320px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    &:before {
+      width: 100%;
+      height: 1px;
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      background: rgba(12, 47, 37, 0.1);
+    }
+    .title {
+      letter-spacing: -0.02em;
+      background: #fff;
+      display: inline-block;
+      margin: 0;
+      padding: 0 15px;
+    }
+  }
+  .clients-box {
+        background: #F7F8ED;
+        border-radius: 20px;
+        width: 264px;
+        height: 103px;
+        line-height: 103px;
+        text-align: center;
+        border: 1px solid #fff;
+        &:hover {
+            .clients-logo {
+                opacity: 0.5;
+            }
+        }
+        .clients-logo {
+            @include transition(all 300ms ease);
+        }
+    }
+  .clients-box-two {
+    border-radius: 20px;
+    width: 264px;
+    height: 103px;
+    line-height: 103px;
+    text-align: center;
+    border: 1px solid rgba(12, 47, 37, 0.1);
+  }
+}
+
+/***
+====================================================================
+  Clients Section Two
+====================================================================
+***/
+.clients-section {
+  .clients-box-two {
+    border-radius: 20px;
+    border: 1px solid rgba(12, 47, 37, 0.1);
+    height: 103px;
+    max-width: 264px;
+    line-height: 103px;
+    text-align: center;
+  }
+}
