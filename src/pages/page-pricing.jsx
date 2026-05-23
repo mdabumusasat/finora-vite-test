@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from '../layouts/Layout';
 import PageTitle from "../section/PageTitle";
-import Pricing from "../section/home2/Pricing";
+import Pricing from "../section/Home2/Pricing";
 
 function PricingPage() {
 

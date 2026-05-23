@@ -2,11 +2,11 @@ import React from "react";
 import Layout from '../layouts/Layout';
 import PageTitle from "../section/PageTitle";
 import About from "../section/home1/About";
-import Service from "../section/home1/Service";
-import ChooseUs from "../section/home1/ChooseUs";
-import Funfact from "../section/home1/Funfact";
-import Video from "../section/home1/Video";
-import Teams from "../section/about/Teams";
+import Service from "../section/Home1/Service";
+import ChooseUs from "../section/Home1/ChooseUs";
+import Funfact from "../section/Home1/Funfact";
+import Video from "../section/Home1/Video";
+import Teams from "../section/About/Teams";
 
 function AboutUs() {
 
